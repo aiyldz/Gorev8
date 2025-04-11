@@ -24,9 +24,9 @@ Bu projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımlar�
 1. Reposu klonlayın:
 
    ```bash
-   git clone https://github.com/aiyldz/odeme-bilgileri-formu.git
+   git clone https://github.com/aiyldz/gorev8.git
 
-   cd odeme-bilgileri-formu
+   cd gorev8
 
     npm install
 
