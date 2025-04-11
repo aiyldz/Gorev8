@@ -1,12 +1,46 @@
-# React + Vite
+# Ödeme Bilgileri Formu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, ödeme bilgilerini toplamak için bir form uygulamasıdır. Kullanıcılar, kart üzerindeki isim, kart numarası, son kullanma tarihi ve güvenlik kodu (CVV) gibi bilgilerini girerek ödemelerini gerçekleştirebilirler. Proje, React kullanarak geliştirilmiştir.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Kart üzerindeki isimi girme
+- Kart numarasını girme
+- Son kullanma tarihi (Ay ve Yıl) seçimi
+- Güvenlik kodu (CVV) girme
+- Tüm alanlar doldurulmazsa kullanıcıya uyarı mesajı gösterme
 
-## Expanding the ESLint configuration
+## Başlangıç
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Gereksinimler
+
+- Node.js (LTS sürümü)
+- npm (Node Package Manager)
+
+### Kurulum
+
+Bu projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları takip edebilirsiniz.
+
+1. Reposu klonlayın:
+
+   ```bash
+   git clone https://github.com/aiyldz/odeme-bilgileri-formu.git
+
+   cd odeme-bilgileri-formu
+
+    npm install
+
+    npm start
+
+    http://localhost:5173
+   ```
+
+### Kullanım
+
+    Uygulama açıldıktan sonra, kullanıcılar aşağıdaki alanları doldurarak ödeme bilgilerini girebilirler:
+
+    Kart Üzerindeki İsim: Kullanıcının kredi kartındaki isim.
+    Kart Numarası: Kullanıcının kredi kartı numarası (16 haneli).
+    Ay ve Yıl: Kartın son kullanma tarihi.
+    Güvenlik Kodu (CVV): Kartın arkasındaki 3 haneli güvenlik kodu.
+    Tüm alanlar doldurulmazsa, kullanıcıya "Lütfen tüm boş alanları doldurun." şeklinde bir uyarı mesajı gösterilir.
